@@ -1,0 +1,145 @@
+body{
+  background-color: #a598ee;
+ }
+
+ .container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: sticky;
+  top: 5px;
+ }
+.search {
+  display: flex;
+  justify-content: center;
+    /* border: 1px solid dimgray; */
+}
+
+.search__elem {
+  display: inline;
+  align-self: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  line-height: 50px;
+  min-width: 4em;
+  background-color: white;
+  box-shadow: 0 8px 20px 0 rgb(0 0 0 / 15%);
+ }
+.search--arrow{
+  appearance: none;
+  position: relative;
+  float: left;
+}
+.search--arrow:after{
+  content:"▼";
+  position: absolute;
+  right: 11px;
+  color: rgb(222, 220, 220);
+  cursor: pointer;
+  pointer-events: none;
+  }
+
+  select:focus {
+    outline: none !important;
+  }
+#genres {
+  appearance: none;
+  font: 400 12px/1.3 sans-serif;
+  border: 0;
+  /* border-style: solid dimgray;  */
+  padding: 0.65em 2.5em 0.55em 0.65em;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  color: rgb(164, 162, 162);
+  cursor: pointer;
+}
+
+input{
+  border: 0;
+  outline: 0;
+  padding: 0.65em 2.5em 0.55em 0.65em;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  color: rgb(164, 162, 162);
+}
+
+::placeholder{
+  color: rgb(164, 162, 162);
+}
+.search__elem--large{
+  flex-grow: 0.3;
+}
+.search--center {
+  text-align: center;
+  cursor: pointer;
+  color: white;
+}
+
+
+.search--center-lookup{
+  background: #63c76a;
+  color: white;
+}
+
+.magnifier{
+  vertical-align: middle;
+  width: 1.7em;
+  height: 1.7em;
+}
+
+.search--center-clear{
+ background-color: rgb(164, 162, 162);
+}
+
+img {
+  height: 300px;
+  margin: 0 auto;
+}
+
+#blocksContainer {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  position: fixed;
+  margin-top: 50px;
+  z-index: -100;
+}
+
+.box {
+  display: grid;
+  /* border: 1px solid rgb(203, 202, 202); */
+  padding: 2em;
+  color: white;
+}
+
+.boxTitle {
+  display: inline;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  text-align: center;
+}
+
+.boxYear {
+  display: inline;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  padding-top: 5px;
+}
+
+#overView {
+  width: 500px;
+  height: 150px;
+  background-color: white;
+  align-self: center;
+  padding: 15px;
+  font-family: 'Roboto', sans-serif;
+  border-top: 1px solid rgb(164, 162, 162);
+  position: absolute;
+  display: none;
+  top:50px;
+}
+#closed{
+  text-align: end;
+}
+
